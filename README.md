@@ -1,2 +1,2 @@
 # DutchFuelPriceTracker
-An application that tracks fuel prices in the Netherlands.
+An application that shows fuel prices in the Netherlands.
