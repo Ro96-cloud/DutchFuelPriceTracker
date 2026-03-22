@@ -53,7 +53,7 @@ def get_nl_fuel_prices():
 def display_prices(prices):
     """Display fuel prices nicely"""
     print(f"\n{'='*50}")
-    print(f"Nederlands Brandstofprijzen - {datetime.now().strftime('%d-%m-%Y %H:%M')}")
+    print(f"Nederlandse Brandstofprijzen - {datetime.now().strftime('%d-%m-%Y %H:%M')}")
     print(f"{'='*50}\n")
     
     if prices:
