@@ -41,6 +41,8 @@ def get_nl_fuel_prices():
                     price = float(price_clean)
                     if fuel_type in prices:
                         prices[fuel_type] = price
+                        if all(prices.values()):
+                            break
                 except ValueError:
                     pass
         
@@ -59,7 +61,7 @@ def display_prices(prices):
     if prices:
         for fuel_type, price in prices.items():
             if price:
-                print(f"  {fuel_type:12} € {price:.3f} / liter")
+                print(f"  {fuel_type:2} € {price:.3f} / liter")
     else:
         print("  Could not fetch prices")
     
